@@ -55,4 +55,18 @@ class HomeViewModel(private val repository: MovieRepository) : ViewModel() {
             }
         }
     }
+
+
+    fun getMovieLists(id:Int) {
+        viewModelScope.launch(Dispatchers.IO) {
+            when (val result = repository.getMovieLists(id)) {
+                is Result.Succes -> {
+                    _movielistes.postValue(result.data)
+                }
+                is Result.Error -> {
+                    _error.postValue(result.message)
+                }
+            }
+        }
+    }
 }

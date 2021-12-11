@@ -4,24 +4,27 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.gmail.eamosse.idbdata.data.Category
-import com.gmail.eamosse.imdb.databinding.CategoryListItemBinding
+import com.gmail.eamosse.idbdata.data.MovieList
+import com.gmail.eamosse.imdb.databinding.MovieListItemBinding
 
-class CategoryAdapter(private val items: List<Category>, private val onClickListener: OnClickListener) :
-    RecyclerView.Adapter<CategoryAdapter.ViewHolder>() {
+class MovieListAdapter (private val items: List<MovieList>, private val onClickListener: MovieListAdapter.OnClickListener) :
 
-    inner class ViewHolder(private val binding: CategoryListItemBinding) :
+    RecyclerView.Adapter<MovieListAdapter.ViewHolder>() {
+
+    inner class ViewHolder(private val binding: MovieListItemBinding) :
         RecyclerView.ViewHolder(binding.root) {
-        fun bind(item: Category) {
+        fun bind(item: MovieList) {
             binding.item = item
         }
     }
 
-    class OnClickListener(val clickListener: (meme: Category) -> Unit) {
-        fun onClick(meme: Category) = clickListener(meme)
+    class OnClickListener(val clickListener: (meme: MovieList) -> Unit) {
+        fun onClick(meme: MovieList) = clickListener(meme)
     }
+
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         val inflater = LayoutInflater.from(parent.context)
-        return ViewHolder(CategoryListItemBinding.inflate(inflater, parent, false))
+        return ViewHolder(MovieListItemBinding.inflate(inflater, parent, false))
     }
 
     override fun getItemCount(): Int = items.size
@@ -33,3 +36,4 @@ class CategoryAdapter(private val items: List<Category>, private val onClickList
         holder.bind(items[position])
     }
 }
+
