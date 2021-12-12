@@ -24,12 +24,19 @@
         android:label="@string/home_second"
         tools:layout="@layout/fragment_home_second">
         <action
-            android:id="@+id/action_HomeSecondFragment_to_HomeFragment"
-            app:destination="@id/navigation_home" />
+            android:id="@+id/action_HomeSecondFragment_to_MovieDetailFragment"
+            app:destination="@id/navigation_movie_detail" />
 
         <argument
-            android:name="categoryId"
-            app:argType="string" />
+            android:name="movieId"
+            app:argType="Int" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_movie_detail"
+        android:name="com.gmail.eamosse.imdb.ui.home.MovieDetailFragment"
+        android:label="@string/movie_detail"
+        tools:layout="@layout/fragment_movie_detail">
     </fragment>
 
     <fragment

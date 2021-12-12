@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.home.MovieDetailFragment">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/poster_path"
+            android:layout_width="300dp"
+            android:layout_height="215dp"
+            android:src="@drawable/ic_launcher_background"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.501"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.077" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/title"
+            android:layout_width="400dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="@id/poster_path"
+            app:layout_constraintStart_toStartOf="@id/poster_path"
+            app:layout_constraintTop_toBottomOf="@id/poster_path" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/vote_count"
+            android:layout_width="400dp"
+            android:layout_height="300dp"
+            android:textColor="@android:color/black"
+            android:gravity="center"
+            app:layout_constraintEnd_toEndOf="@id/title"
+            app:layout_constraintStart_toStartOf="@id/title"
+            app:layout_constraintTop_toBottomOf="@id/title" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/original_language"
+            android:layout_width="400dp"
+            android:layout_height="300dp"
+            android:textColor="@android:color/black"
+            android:gravity="center"
+            app:layout_constraintEnd_toEndOf="@id/vote_count"
+            app:layout_constraintStart_toStartOf="@id/vote_count"
+            app:layout_constraintTop_toBottomOf="@id/vote_count" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/overview"
+            android:layout_width="400dp"
+            android:layout_height="300dp"
+            android:textColor="@android:color/black"
+            android:gravity="center"
+            app:layout_constraintEnd_toEndOf="@id/original_language"
+            app:layout_constraintStart_toStartOf="@id/original_language"
+            app:layout_constraintTop_toBottomOf="@id/original_language" />
+
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

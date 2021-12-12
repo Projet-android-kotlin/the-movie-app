@@ -6,5 +6,6 @@ data class MovieDetail(
     val vote_count: Int,
     val title: String,
     val release_date: String,
-    val original_language: String
+    val original_language: String,
+    val poster_path: String
 )

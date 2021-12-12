@@ -23,5 +23,6 @@ fun MovieDetailResponse.toMovieDetail() = MovieDetail(
     overview = overview!!,
     vote_count = vote_count!!,
     release_date = release_date!!,
-    original_language = original_language!!
+    original_language = original_language!!,
+    poster_path = poster_path!!
 )

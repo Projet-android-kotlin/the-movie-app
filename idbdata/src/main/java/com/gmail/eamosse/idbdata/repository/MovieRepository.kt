@@ -66,17 +66,17 @@ class MovieRepository : KoinComponent {
             is Result.Error -> result
         }
     }
-/*
+
     suspend fun getMovieDetail(id: Int): Result<MovieDetail> {
         return when (val result = online.getMovieDetail(id)) {
             is Result.Succes -> {
-                // On utilise la fonction map pour convertir les movies de la réponse serveur
-                // en liste de movie d'objets de l'application
+                // On utilise la fonction toMoivieDetail pour convertir le film de la réponse serveur
+                // en objet movieDetail de l'application
                 val movieDetail = result.data.toMovieDetail()
-                }
+
                 Result.Succes(movieDetail)
             }
             is Result.Error -> result
         }
-    }*/
+    }
 }
