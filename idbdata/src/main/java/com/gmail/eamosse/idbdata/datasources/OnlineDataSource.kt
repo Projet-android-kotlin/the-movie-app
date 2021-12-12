@@ -49,24 +49,10 @@ internal class OnlineDataSource(private val service: MovieService) {
         }
     }
 
-    suspend fun getMovieLists(id: Int): Result<List<MoviesResponse.Results>> {
-        return try {
-            val response = service.getMovieLists(id)
-            if (response.isSuccessful) {
-                Result.Succes(response.body()!!.results)
-            } else {
-                Result.Error(
-                    exception = Exception(),
-                    message = response.message(),
-                    code = response.code()
-                )
-            }
-        } catch (e: Exception) {
-            Result.Error(
-                exception = e,
-                message = e.message ?: "No message",
-                code = -1
-            )
+    suspend fun getMovieListByCategory(categoryId: String): Result<MoviesResponse> {
+        return safeCall {
+            val response = service.getMovieListByCategory(categoryId)
+            response.parse()
         }
     }
 }

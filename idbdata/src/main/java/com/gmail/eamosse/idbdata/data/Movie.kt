@@ -1,6 +1,6 @@
 package com.gmail.eamosse.idbdata.data
 
-data class MovieList(
+data class Movie(
     val id: Int,
-    val name: String
+    val title: String
 )

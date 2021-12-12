@@ -3,23 +3,22 @@ package com.gmail.eamosse.imdb.ui.home
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import com.gmail.eamosse.idbdata.data.Category
-import com.gmail.eamosse.idbdata.data.MovieList
+import com.gmail.eamosse.idbdata.data.Movie
 import com.gmail.eamosse.imdb.databinding.MovieListItemBinding
 
-class MovieListAdapter (private val items: List<MovieList>, private val onClickListener: MovieListAdapter.OnClickListener) :
+class MovieListAdapter(private val items: List<Movie>, private val onClickListener: MovieListAdapter.OnClickListener) :
 
     RecyclerView.Adapter<MovieListAdapter.ViewHolder>() {
 
     inner class ViewHolder(private val binding: MovieListItemBinding) :
         RecyclerView.ViewHolder(binding.root) {
-        fun bind(item: MovieList) {
+        fun bind(item: Movie) {
             binding.item = item
         }
     }
 
-    class OnClickListener(val clickListener: (meme: MovieList) -> Unit) {
-        fun onClick(meme: MovieList) = clickListener(meme)
+    class OnClickListener(val clickListener: (meme: Movie) -> Unit) {
+        fun onClick(meme: Movie) = clickListener(meme)
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
@@ -36,4 +35,3 @@ class MovieListAdapter (private val items: List<MovieList>, private val onClickL
         holder.bind(items[position])
     }
 }
-

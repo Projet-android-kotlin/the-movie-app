@@ -38,18 +38,26 @@ class HomeFragment : Fragment() {
                 }
             )
 
-            categories.observe(viewLifecycleOwner, Observer { it ->
-                binding.categoryList.adapter = CategoryAdapter(it, CategoryAdapter.OnClickListener{
-                    val action = actionHomeFragmentToHomeSecondFragment("From HomeFragment")
-                    NavHostFragment.findNavController(this@HomeFragment)
-                        .navigate(action)
-                })
+            categories.observe(
+                viewLifecycleOwner,
+                Observer { it ->
+                    binding.categoryList.adapter = CategoryAdapter(
+                        it,
+                        CategoryAdapter.OnClickListener {
+                            val action = actionHomeFragmentToHomeSecondFragment(it.id.toString())
+                            NavHostFragment.findNavController(this@HomeFragment)
+                                .navigate(action)
+                        }
+                    )
 
-
-                error.observe(viewLifecycleOwner, Observer {
-                    //afficher l'erreur
-                })
-            })
-
+                    error.observe(
+                        viewLifecycleOwner,
+                        Observer {
+                            // afficher l'erreur
+                        }
+                    )
+                }
+            )
         }
-    }}
+    }
+}
