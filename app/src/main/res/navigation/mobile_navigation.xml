@@ -28,8 +28,8 @@
             app:destination="@id/navigation_movie_detail" />
 
         <argument
-            android:name="movieId"
-            app:argType="Int" />
+            android:name="categoryId"
+            app:argType="string" />
     </fragment>
 
     <fragment
@@ -37,6 +37,14 @@
         android:name="com.gmail.eamosse.imdb.ui.home.MovieDetailFragment"
         android:label="@string/movie_detail"
         tools:layout="@layout/fragment_movie_detail">
+
+        <action
+            android:id="@+id/action_HomeSecondFragment_to_MovieDetailFragment"
+            app:destination="@id/navigation_movie_detail" />
+
+        <argument
+            android:name="movieId"
+            app:argType="string" />
     </fragment>
 
     <fragment

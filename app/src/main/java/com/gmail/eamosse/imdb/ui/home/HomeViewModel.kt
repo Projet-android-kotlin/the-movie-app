@@ -35,8 +35,6 @@ class HomeViewModel(private val repository: MovieRepository) : ViewModel() {
     val moviedetail: LiveData<MovieDetail>
         get() = _moviedetail
 
-
-
     init {
         viewModelScope.launch(Dispatchers.IO) {
             when (val result = repository.getToken()) {
@@ -75,7 +73,7 @@ class HomeViewModel(private val repository: MovieRepository) : ViewModel() {
             }
         }
     }
-    fun getMovieDetail(movieId: Int) {
+    fun getMovieDetail(movieId: String) {
         viewModelScope.launch(Dispatchers.IO) {
             when (val result = repository.getMovieDetail(movieId)) {
                 is Result.Succes -> {

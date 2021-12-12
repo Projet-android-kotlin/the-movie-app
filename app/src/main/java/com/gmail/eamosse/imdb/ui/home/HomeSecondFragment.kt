@@ -14,6 +14,7 @@ class HomeSecondFragment : Fragment() {
 
     private val homeViewModel: HomeViewModel by viewModel()
     private lateinit var binding: FragmentHomeSecondBinding
+
     private val args: HomeSecondFragmentArgs by navArgs()
 
     override fun onCreateView(

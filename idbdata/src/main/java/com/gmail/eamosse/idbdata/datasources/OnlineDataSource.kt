@@ -56,9 +56,9 @@ internal class OnlineDataSource(private val service: MovieService) {
             response.parse()
         }
     }
-    suspend fun getMovieDetail(movieId: Int): Result<MovieDetailResponse> {
+    suspend fun getMovieDetail(movieId: String): Result<MovieDetailResponse> {
         return safeCall {
-            val response = service.getMovieDetail(movieId)
+            val response = service.getMovieDetail(movieId.toInt())
             response.parse()
         }
     }

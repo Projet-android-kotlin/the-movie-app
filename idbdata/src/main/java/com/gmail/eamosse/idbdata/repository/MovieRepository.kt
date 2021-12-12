@@ -67,7 +67,7 @@ class MovieRepository : KoinComponent {
         }
     }
 
-    suspend fun getMovieDetail(id: Int): Result<MovieDetail> {
+    suspend fun getMovieDetail(id: String): Result<MovieDetail> {
         return when (val result = online.getMovieDetail(id)) {
             is Result.Succes -> {
                 // On utilise la fonction toMoivieDetail pour convertir le film de la réponse serveur
