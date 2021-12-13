@@ -34,4 +34,5 @@ class MovieListAdapter(private val items: List<Movie>, private val onClickListen
         }
         holder.bind(items[position])
     }
+
 }
