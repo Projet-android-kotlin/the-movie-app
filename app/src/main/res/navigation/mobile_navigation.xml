@@ -54,8 +54,8 @@
         tools:layout="@layout/fragment_dashboard" />
 
     <fragment
-        android:id="@+id/navigation_notifications"
-        android:name="com.gmail.eamosse.imdb.ui.notifications.NotificationsFragment"
-        android:label="@string/title_notifications"
-        tools:layout="@layout/fragment_notifications" />
+        android:id="@+id/navigation_aboutus"
+        android:name="com.gmail.eamosse.imdb.ui.aboutUs.AboutUsFragment"
+        android:label="@string/title_aboutus"
+        tools:layout="@layout/fragment_aboutus" />
 </navigation>
