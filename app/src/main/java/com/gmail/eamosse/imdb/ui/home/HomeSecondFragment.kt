@@ -6,6 +6,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
+import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.fragment.navArgs
 import com.gmail.eamosse.imdb.databinding.FragmentHomeSecondBinding
 import org.koin.androidx.viewmodel.ext.android.viewModel
@@ -44,6 +45,10 @@ class HomeSecondFragment : Fragment() {
                     binding.movieList.adapter = MovieListAdapter(
                         it,
                         MovieListAdapter.OnClickListener {
+                            val action =
+                                HomeSecondFragmentDirections.actionHomeSecondFragmentToMovieDetailFragment(it.id.toString())
+                            NavHostFragment.findNavController(this@HomeSecondFragment)
+                                .navigate(action)
                         }
                     )
                 }

@@ -39,7 +39,7 @@ class MovieDetailFragment : Fragment() {
                 viewLifecycleOwner,
                 Observer {
                     binding.title.text = moviedetail.value?.title
-                    binding.voteCount.text=  " - " + moviedetail.value?.vote_count + " / 10"
+                    binding.voteCount.text = " - " + moviedetail.value?.vote_count + " / 10"
                     binding.originalLanguage.text = moviedetail.value?.original_language
                     binding.overview.text = moviedetail.value?.overview
                     /*Picasso.get()
