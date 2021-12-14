@@ -29,9 +29,9 @@ Le but de cette application est de permettre à l'utilisateur de parcourir les c
 
 ✔Captures d'écrans des vues :
 
-![image](https://user-images.githubusercontent.com/55514071/146091366-018398f3-98bd-4768-8597-a28c78d62510.png)
-![image](https://user-images.githubusercontent.com/55514071/146091628-fa2f2b5a-de6d-4baf-b792-fb9936f0d0c3.png)
-![image](https://user-images.githubusercontent.com/55514071/146091660-57457617-9f9a-4750-bd61-8473b32a3d18.png)
+- ![image](https://user-images.githubusercontent.com/55514071/146091366-018398f3-98bd-4768-8597-a28c78d62510.png)
+- ![image](https://user-images.githubusercontent.com/55514071/146091628-fa2f2b5a-de6d-4baf-b792-fb9936f0d0c3.png)
+- ![image](https://user-images.githubusercontent.com/55514071/146091660-57457617-9f9a-4750-bd61-8473b32a3d18.png)
 
 
 
