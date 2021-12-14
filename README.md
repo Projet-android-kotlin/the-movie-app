@@ -1,5 +1,6 @@
 # The Moovie App Anneflix
-
+ 
+ Projet Android Kotlin MBDS 2021-2022
 
 ✔Groupe de travail :
 - AANAYA Nouhaila
@@ -20,14 +21,16 @@ Le but de cette application est de permettre à l'utilisateur de parcourir les c
 
 
 ✔Fonctionnalités: 
+- 🥇 Personnaliser l'icone de l'application et premier fragment avec l'icone de AnneFlix 
 - 🥇 Afficher les catégories de films 
 - 🥇 Parcourir les films par catégorie 
 - 🥇 Afficher les détails de chaque film
+- 🥇 Afficher fragment AboutUs
 - 🥇 Gestion de la navigation avec Navigation-fragment 
 - 🥇 Mise en place de l'architecture MVVM(Model View View Model)
 - 🥇 Gestion de données via une API et Room
 
-✔Captures d'écrans des vues :
+✔Captures d'écrans des differents vues :
 - ![image](https://user-images.githubusercontent.com/55514071/146094091-ef994208-a064-4013-bb9f-10de03f1dbc4.png)
 - ![image](https://user-images.githubusercontent.com/55514071/146094520-8ac90386-d4ea-4021-866f-218061032aa9.png)
 - ![image](https://user-images.githubusercontent.com/55514071/146094590-4df2660c-449b-49a2-bd43-95e74cdd83a5.png)
