@@ -5,9 +5,9 @@ import com.google.gson.annotations.SerializedName
 data class MoviesResponse(
     @SerializedName("page")
     val page: Int,
+
     @SerializedName("results")
     val results: List<Results>
-
 ) {
     data class Results(
         @SerializedName("id")
@@ -20,6 +20,10 @@ data class MoviesResponse(
         val title: String,
         @SerializedName("release_date")
         val release_date: String,
+
+        @SerializedName("poster_path")
+        val poster_path: String,
+
         @SerializedName("original_language")
         val original_language: String
 

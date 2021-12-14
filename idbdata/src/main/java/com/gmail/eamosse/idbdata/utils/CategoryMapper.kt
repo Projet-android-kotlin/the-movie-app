@@ -14,8 +14,12 @@ fun CategoryResponse.Genre.toCategory() = Category(
 
 fun MoviesResponse.Results.toMovie() = Movie(
     id = id!!,
-    title = title!!
+    title = title!!,
+    poster_path = poster_path!!
+
 )
+
+
 
 fun MovieDetailResponse.toMovieDetail() = MovieDetail(
     id = id!!,

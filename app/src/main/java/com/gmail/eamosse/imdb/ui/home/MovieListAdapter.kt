@@ -3,8 +3,10 @@ package com.gmail.eamosse.imdb.ui.home
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
+import com.bumptech.glide.Glide
 import com.gmail.eamosse.idbdata.data.Movie
 import com.gmail.eamosse.imdb.databinding.MovieListItemBinding
+import kotlinx.android.synthetic.main.fragment_movie_detail.view.*
 
 class MovieListAdapter(private val items: List<Movie>, private val onClickListener: MovieListAdapter.OnClickListener) :
 
@@ -14,6 +16,10 @@ class MovieListAdapter(private val items: List<Movie>, private val onClickListen
         RecyclerView.ViewHolder(binding.root) {
         fun bind(item: Movie) {
             binding.item = item
+            val context = binding.movielistImg
+            Glide.with(context)
+                .load("https://www.themoviedb.org/t/p/w600_and_h900_bestv2"+item.poster_path)
+                .into(context)
         }
     }
 
