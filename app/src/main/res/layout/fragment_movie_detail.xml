@@ -15,55 +15,75 @@
             android:src="@drawable/ic_launcher_background"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.501"
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.085" />
+            app:layout_constraintVertical_bias="0.0" />
 
         <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/title"
-            android:layout_width="300dp"
-            android:layout_height="40dp"
-            android:layout_marginTop="20dp"
+            android:layout_width="350dp"
+            android:layout_height="50dp"
             android:gravity="center"
             android:textColor="@android:color/black"
-            android:textSize="20sp"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
             app:layout_constraintEnd_toEndOf="@id/poster_path"
             app:layout_constraintStart_toStartOf="@id/poster_path"
             app:layout_constraintTop_toBottomOf="@id/poster_path" />
 
         <androidx.appcompat.widget.AppCompatTextView
-            android:id="@+id/vote_count"
+            android:id="@+id/release_date"
             android:layout_width="300dp"
             android:layout_height="40dp"
-            android:textColor="@android:color/black"
+            android:textColor="@android:color/darker_gray"
             android:gravity="center"
+            android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="@id/title"
             app:layout_constraintStart_toStartOf="@id/title"
             app:layout_constraintTop_toBottomOf="@id/title" />
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/synopsis"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:textColor="@android:color/black"
+            android:text="@string/synopsis"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:gravity="left"
+            app:layout_constraintEnd_toEndOf="@id/release_date"
+            app:layout_constraintStart_toStartOf="@id/release_date"
+            app:layout_constraintTop_toBottomOf="@id/release_date" />
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/overview"
+            android:layout_width="300dp"
+            android:layout_height="100dp"
+            android:textColor="@android:color/black"
+            app:layout_constraintEnd_toEndOf="@id/synopsis"
+            app:layout_constraintStart_toStartOf="@id/synopsis"
+            app:layout_constraintTop_toBottomOf="@id/synopsis" />
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/vote_count"
+            android:layout_width="300dp"
+            android:layout_height="30dp"
+            android:textColor="@android:color/black"
+            android:gravity="center"
+            android:layout_marginTop="5dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@id/overview"
+            app:layout_constraintStart_toStartOf="@id/overview"
+            app:layout_constraintTop_toBottomOf="@id/overview" />
 
         <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/original_language"
             android:layout_width="300dp"
-            android:layout_height="40dp"
+            android:layout_height="30dp"
             android:textColor="@android:color/black"
             android:gravity="center"
             app:layout_constraintEnd_toEndOf="@id/vote_count"
             app:layout_constraintStart_toStartOf="@id/vote_count"
             app:layout_constraintTop_toBottomOf="@id/vote_count" />
-
-        <androidx.appcompat.widget.AppCompatTextView
-            android:id="@+id/overview"
-            android:layout_width="300dp"
-            android:layout_height="300dp"
-            android:textColor="@android:color/black"
-
-            app:layout_constraintEnd_toEndOf="@id/original_language"
-            app:layout_constraintStart_toStartOf="@id/original_language"
-            app:layout_constraintTop_toBottomOf="@id/original_language" />
-
-
-
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>

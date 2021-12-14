@@ -10,6 +10,8 @@ data class MovieDetailResponse(
     val overview: String,
     @SerializedName("vote_count")
     val vote_count: Int,
+    @SerializedName("status")
+    val status: String,
     @SerializedName("title")
     val title: String,
     @SerializedName("release_date")

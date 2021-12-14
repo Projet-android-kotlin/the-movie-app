@@ -20,6 +20,7 @@ fun MoviesResponse.Results.toMovie() = Movie(
 fun MovieDetailResponse.toMovieDetail() = MovieDetail(
     id = id!!,
     title = title!!,
+    status = status!!,
     overview = overview!!,
     vote_count = vote_count!!,
     release_date = release_date!!,
