@@ -1,4 +1,4 @@
-# The Moovie App Annaflix
+# The Moovie App Anneflix
 
 
 ✔Groupe de travail :
@@ -8,7 +8,7 @@
 - TCHERGUIZOVA Khadija 
 
 ✔Objectif de l'application :
-Le but de cette application est de permettre à l'utilisateur de parcourir les catégories de films , de trouver la liste des films par catégories et enfin afficher les détails qui concerne chaque film 
+Le but de cette application est de permettre à l'utilisateur de parcourir les catégories de films , de trouver la liste des films par catégories et enfin afficher les détails qui concerne chaque film.
 
 ✔librairies utilisées :
 - 💡 Navigation-fragment
@@ -28,11 +28,14 @@ Le but de cette application est de permettre à l'utilisateur de parcourir les c
 - 🥇 Gestion de données via une API et Room
 
 ✔Captures d'écrans des vues :
-- ![image](https://user-images.githubusercontent.com/55514071/146092985-87865d4f-f314-4079-9f70-1f7f2deb9924.png)
-- ![image](https://user-images.githubusercontent.com/55514071/146091366-018398f3-98bd-4768-8597-a28c78d62510.png)
-- ![image](https://user-images.githubusercontent.com/55514071/146091628-fa2f2b5a-de6d-4baf-b792-fb9936f0d0c3.png)
-- ![image](https://user-images.githubusercontent.com/55514071/146091660-57457617-9f9a-4750-bd61-8473b32a3d18.png)
-- ![image](https://user-images.githubusercontent.com/55514071/146093311-69f8f147-5331-4b3d-81c3-8e950855b2b4.png)
+- ![image](https://user-images.githubusercontent.com/55514071/146094091-ef994208-a064-4013-bb9f-10de03f1dbc4.png)
+- ![image](https://user-images.githubusercontent.com/55514071/146094520-8ac90386-d4ea-4021-866f-218061032aa9.png)
+- ![image](https://user-images.githubusercontent.com/55514071/146094590-4df2660c-449b-49a2-bd43-95e74cdd83a5.png)
+- ![image](https://user-images.githubusercontent.com/55514071/146094623-2ce534a4-7326-45ab-a7a7-c36bc273145a.png)
+- ![image](https://user-images.githubusercontent.com/55514071/146094646-c3c0758a-e2d5-4e8a-9fe5-565300da70ea.png)
+- ![image](https://user-images.githubusercontent.com/55514071/146095457-77f55997-6198-4292-b20b-b62fe80c110b.png)
+
+
 
 
 
