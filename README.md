@@ -28,14 +28,19 @@ Le but de cette application est de permettre à l'utilisateur de parcourir les c
 - 🥇 Afficher fragment AboutUs
 - 🥇 Gestion de la navigation avec Navigation-fragment 
 - 🥇 Mise en place de l'architecture MVVM(Model View View Model)
-- 🥇 Gestion de données via une API et Room
+- 🥇 Gestion de données via une API 
 
 ✔Captures d'écrans des differents vues :
 - ![image](https://user-images.githubusercontent.com/55514071/146094091-ef994208-a064-4013-bb9f-10de03f1dbc4.png)
+
 - ![image](https://user-images.githubusercontent.com/55514071/146094520-8ac90386-d4ea-4021-866f-218061032aa9.png)
+
 - ![image](https://user-images.githubusercontent.com/55514071/146094590-4df2660c-449b-49a2-bd43-95e74cdd83a5.png)
+
 - ![image](https://user-images.githubusercontent.com/55514071/146094623-2ce534a4-7326-45ab-a7a7-c36bc273145a.png)
+
 - ![image](https://user-images.githubusercontent.com/55514071/146094646-c3c0758a-e2d5-4e8a-9fe5-565300da70ea.png)
+
 - ![image](https://user-images.githubusercontent.com/55514071/146095457-77f55997-6198-4292-b20b-b62fe80c110b.png)
 
 
